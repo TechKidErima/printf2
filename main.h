@@ -33,6 +33,8 @@ typedef struct printHandler
 	int (*f)(va_list ap, flags_t *f);
 } ph;
 
+int print_unsigned(va_list types, char buffer[], int flags, int width, int precision, int size)
+int get_flags(const char *format, int *i)
 int print_int(va_list 1, flags_t *f);
 int print_hex_big(va_list 1, flags_t *f);
 int print_binary(va_list 1, flags_t *f);
